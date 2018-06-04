@@ -1,0 +1,84 @@
+﻿@model List<PersonModel>
+
+
+<h2>Książka telefoniczna</h2>
+
+@Html.ActionLink("Dodaj wpis", "Create", "Person", null, new { @class = "btn btn-primary" })
+
+<div class="row">
+    <div class="col-md-4">
+        <form asp-action="Index" method="get">
+
+            <div class="form-group">
+                <label class="control-label">Wyszukaj nazwisko</label>
+                <input type="text" name="filterLastName" class="form-control" value="@ViewBag.FilterLastName"/>
+                <input type="hidden" name="page" class="ViewBag.Page" value="1"/>
+            </div>
+           
+
+            <div class="form-group">
+                <input type="submit" value="Wyszukaj" class="btn btn-default" />
+            </div>
+        </form>
+    </div>
+</div>
+
+<table class="table table-striped">
+    <thead>
+    <tr>
+        <th>@Html.DisplayNameFor(r => r.FirstOrDefault().ID)</th>
+        <th>@Html.DisplayNameFor(r => r.FirstOrDefault().FirstName)</th>
+        <th>@Html.DisplayNameFor(r => r.FirstOrDefault().LastName)</th>
+        <th>@Html.DisplayNameFor(r => r.FirstOrDefault().Phone)</th>
+        <th>@Html.DisplayNameFor(r => r.FirstOrDefault().Email)</th>
+        <th>@Html.DisplayNameFor(r => r.FirstOrDefault().Created)</th>
+        <th>@Html.DisplayNameFor(r => r.FirstOrDefault().Updated)</th>
+        <th></th>
+    </tr>
+    </thead>
+    <tbody>
+
+    @foreach (var item in Model)
+    {
+        <tr>
+            <td>@Html.DisplayFor(r => item.ID)</td>
+            <td>@Html.DisplayFor(r => item.FirstName)</td>
+            <td>@Html.DisplayFor(r => item.LastName)</td>
+            <td>@Html.DisplayFor(r => item.Phone)</td>
+            <td>@Html.DisplayFor(r => item.Email)</td>
+            <td>@Html.DisplayFor(r => item.Created)</td>
+            <td>@Html.DisplayFor(r => item.Updated)</td>
+            <td>
+                @Html.ActionLink("Edytuj", "Edit", "Person", new { Id = item.ID })|
+                @Html.ActionLink("Usuń", "Delete", "Person", new { Id = item.ID })
+             
+            </td>
+        </tr>
+    }
+
+
+    </tbody>
+
+    <tfoot>
+    <tr>
+        <td colspan="8" class="text-center">
+            <div class="btn-group" role="group" aria-label="Strony">
+                @for (var i = 1; i <= ViewBag.Pages; i++)
+                {
+                    <a href="?page=@i"
+                       class="btn @(i == (int) ViewBag.Page ? "btn-primary" : "btn-default") ">
+                        @i
+                    </a>
+                }
+            </div>
+        </td>
+    </tr>
+    </tfoot>
+</table>
+
+
+
+
+
+
+

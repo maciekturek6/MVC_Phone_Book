@@ -1,0 +1,11 @@
+C:\Users\macie\OneDrive\Pulpit\Warsztaty_MVC\Phone_book\Phone_book\bin\Debug\netcoreapp2.0\Phone_book.deps.json
+C:\Users\macie\OneDrive\Pulpit\Warsztaty_MVC\Phone_book\Phone_book\bin\Debug\netcoreapp2.0\Phone_book.runtimeconfig.json
+C:\Users\macie\OneDrive\Pulpit\Warsztaty_MVC\Phone_book\Phone_book\bin\Debug\netcoreapp2.0\Phone_book.runtimeconfig.dev.json
+C:\Users\macie\OneDrive\Pulpit\Warsztaty_MVC\Phone_book\Phone_book\bin\Debug\netcoreapp2.0\Phone_book.dll
+C:\Users\macie\OneDrive\Pulpit\Warsztaty_MVC\Phone_book\Phone_book\obj\Debug\netcoreapp2.0\Phone_book.csprojResolveAssemblyReference.cache
+C:\Users\macie\OneDrive\Pulpit\Warsztaty_MVC\Phone_book\Phone_book\obj\Debug\netcoreapp2.0\Phone_book.csproj.CoreCompileInputs.cache
+C:\Users\macie\OneDrive\Pulpit\Warsztaty_MVC\Phone_book\Phone_book\obj\Debug\netcoreapp2.0\Phone_book.AssemblyInfoInputs.cache
+C:\Users\macie\OneDrive\Pulpit\Warsztaty_MVC\Phone_book\Phone_book\obj\Debug\netcoreapp2.0\Phone_book.AssemblyInfo.cs
+C:\Users\macie\OneDrive\Pulpit\Warsztaty_MVC\Phone_book\Phone_book\bin\Debug\netcoreapp2.0\Phone_book.pdb
+C:\Users\macie\OneDrive\Pulpit\Warsztaty_MVC\Phone_book\Phone_book\obj\Debug\netcoreapp2.0\Phone_book.dll
+C:\Users\macie\OneDrive\Pulpit\Warsztaty_MVC\Phone_book\Phone_book\obj\Debug\netcoreapp2.0\Phone_book.pdb
